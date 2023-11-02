@@ -25,8 +25,8 @@ function User(){
             <label >Email:</label>
             <input id="email" type="email" placeholder="Email" onChange={(e)=> handleEmail(e.target.value)} ></input>
             <p className="output">Current values in store:</p>
-            <p>Name-{user.user.name}</p>
-            <p>Emial-{user.user.email}</p>
+            <p className="output">Name - Thomas Edward Stark {user.user.name}</p>
+            <p>Emial - {user.user.email}</p>
         </div>
     )
 }
