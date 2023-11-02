@@ -17,13 +17,14 @@ function User(){
     }
     return (
         <div>
+            <h1>User Information</h1>
             <label >Name:</label>
             <input onChange={(e)=> handleUser(e.target.value)} id="name" type="text" placeholder="Name" ></input>
             <br></br>
             <br></br>
             <label >Email:</label>
             <input id="email" type="email" placeholder="Email" onChange={(e)=> handleEmail(e.target.value)} ></input>
-            <p>Current values in store:</p>
+            <p className="output">Current values in store:</p>
             <p>Name-{user.user.name}</p>
             <p>Emial-{user.user.email}</p>
         </div>
